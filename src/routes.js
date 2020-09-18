@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Subscriber from "./pages/Subscriber";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
+import Collaborator from "./pages/Collaborator";
 
 const Routes = () => {
   return (
@@ -21,6 +22,9 @@ const Routes = () => {
         </Route>
         <Route exact path="/login">
           <Login />
+        </Route>
+        <Route exact path="/collaborator">
+          <Collaborator />
         </Route>
       </Switch>
     </Router>
