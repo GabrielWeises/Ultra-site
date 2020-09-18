@@ -4,6 +4,38 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 
+  .form .h3 {
+    font-family: "Segoe UI", sans-serif;
+    background: #ff6913;
+    color: #fff;
+    padding: 10px;
+    font-size: 22px;
+    margin: 10px 0 20px;
+    border-radius: 25px;
+    font-weight: bold;
+  }
+  .form .h4 {
+    font-family: "Work Sans", sans-serif;
+    font-size: 14px;
+    margin: 0 20px;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  @media (max-width: 900px) {
+    .mobile {
+      display: flex;
+    }
+    .desktop {
+      display: none;
+    }
+  }
+
   .form {
     background-size: cover;
 
@@ -11,11 +43,14 @@ export const Container = styled.div`
       display: flex;
       justify-content: center;
       position: relative;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
     }
     .header .title {
       color: #fff;
       font-size: 84pt;
-      font-weight: 600;
+      font-weight: 700;
       font-family: "Montserrat", sans-serif;
     }
 
@@ -23,11 +58,8 @@ export const Container = styled.div`
       font-family: "Segoe UI", sans-serif;
       font-weight: bold;
       color: #012718;
-      position: absolute;
-      left: 50%;
-      bottom: 20px;
       font-size: 30pt;
-      transform: translateX(-50%);
+      margin-top: -50px;
     }
 
     .body .form-1,
@@ -77,7 +109,7 @@ export const Container = styled.div`
       display: flex;
     }
     .body button {
-      background: #ff6c00;
+      background: #ff6d00;
       font-family: "Work Sans", sans-serif;
       font-size: 12px;
       margin: 20px 0;
@@ -113,8 +145,8 @@ export const Center = styled.div`
   .header .title {
     color: #d7fff6;
     font-size: 84pt;
-    font-weight: 500;
     font-family: "Montserrat", sans-serif;
+    font-weight: 700;
   }
 
   .sub-title {
@@ -141,7 +173,7 @@ export const Center = styled.div`
   .title-second {
     color: #d7fff6;
     font-size: 90pt;
-    font-weight: 500;
+    font-weight: 600;
     font-family: "Montserrat", sans-serif;
     text-align: right;
   }
@@ -153,7 +185,7 @@ export const Center = styled.div`
   }
 `;
 export const Slide = styled.div`
-  background: #ff6c00;
+  background: #ff6d00;
   width: 100%;
   position: relative;
 
@@ -274,15 +306,19 @@ export const Prices = styled.div`
     display: flex;
   }
 
-  .sub-title-third {
+  .header {
+    display: Flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+  }
+
+  .header .sub {
     font-family: "Segoe UI", sans-serif;
     font-weight: bold;
     color: #012718;
-    position: absolute;
-    left: 50%;
-    bottom: 20px;
-    font-size: 30pt;
-    transform: translateX(-50%);
+    font-size: 32pt;
+    margin-top: -50px;
   }
 
   .text {
@@ -291,8 +327,8 @@ export const Prices = styled.div`
     font-size: 14px;
   }
   .prices .price-header {
-    height: 150px;
     background: #ff7a1d;
+    height: 195px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -329,7 +365,7 @@ export const Prices = styled.div`
 
   .prices .price-body button {
     width: 140px;
-    background: #ff6c00;
+    background: #ff6d00;
     border: 0;
     font-family: "Work Sans", sans-serif;
     font-size: 12px;
@@ -340,7 +376,7 @@ export const Prices = styled.div`
 `;
 
 export const Footer = styled.div`
-  background: #ff6c00;
+  background: #ff6d00;
 
   margin-top: 100px;
   position: relative;
@@ -387,7 +423,7 @@ export const Footer = styled.div`
     justify-content: center;
     align-items: center;
     height: 50px;
-    background: #ff6c00;
+    background: #ff6d00;
     font-weight: bold;
     color: #fff;
     font-size: 25px;

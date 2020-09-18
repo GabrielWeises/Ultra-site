@@ -3,9 +3,18 @@ import React from "react";
 import { Container, Center } from "./styles";
 
 const Footer = () => {
+  function SmoothScroll() {
+    const home = document.querySelector("#home");
+    const homeMobile = document.querySelector("#home-mobile");
+
+    home.scrollIntoView({ behavior: "smooth" });
+    homeMobile.scrollIntoView({ behavior: "smooth" });
+  }
   return (
     <Container>
-      <div className="icon">^</div>
+      <div onClick={SmoothScroll} className="icon">
+        ^
+      </div>
       <Center>
         <div className="footer">
           <div className="social">
@@ -17,27 +26,19 @@ const Footer = () => {
             </ul>
             <ul className="media-social">
               <li>
-                <a href="">
+                <a
+                  href="https://www.facebook.com/ultrainternetoficial"
+                  target="_blank"
+                >
                   <i class="fab fa-facebook-f"></i>
                 </a>
               </li>
+
               <li>
-                <a href="">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <i class="fab fa-google"></i>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <i class="fab fa-pinterest-p"></i>
-                </a>
-              </li>
-              <li>
-                <a href="">
+                <a
+                  href="https://www.instagram.com/ultrainternetoficial/"
+                  target="_blank"
+                >
                   <i class="fab fa-instagram"></i>
                 </a>
               </li>
@@ -45,8 +46,9 @@ const Footer = () => {
           </div>
           <div className="contact">
             <h2>Contato</h2>
-            <p>Lorem ipsum dolor sit amet,</p>
-            <p>consetetur sadipscing eltir, sed diam.</p>
+            <p>Avenida Brasil 865 </p>
+            <p>Santa Terezinha</p>
+            <p>São Gotardo MG 38800-000</p>
             <ul className="contact-list">
               <li>
                 <i class="fas fa-map-marker-alt"></i>São Gotardo
@@ -71,10 +73,10 @@ const Footer = () => {
           </div>
         </div>
         <div className="copy-right">
-          <span>Desenvolvido por Agância Dom Quixote</span>{" "}
-          <span className="second">
+          <p>Desenvolvido por Agência Dom Quixote</p>{" "}
+          <p className="second">
             &copy; 2020 - Ultra Internet - Todos os Direitos Reservados
-          </span>
+          </p>
         </div>
       </Center>
     </Container>

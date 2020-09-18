@@ -1,0 +1,47 @@
+.menu-mobile {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 50px;
+  height: 60px;
+  align-items: center;
+}
+.icon {
+  background: #ff6d00;
+  color: #fff;
+  width: 40px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  display: flex;
+}
+.icon i {
+  font-size: 20px;
+}
+.icon-box {
+  display: flex;
+  align-items: center;
+}
+.icon-box span {
+  margin-right: 20px;
+}
+
+.menu {
+  z-index: 2;
+  position: relative;
+  display: none;
+}
+.menu.active {
+  display: block !important;
+}
+
+ul.menu {
+  background: #fff;
+  text-align: center;
+}
+
+ul.menu li {
+  color: #ff6d00;
+  padding: 10px;
+}

@@ -1,6 +1,18 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  .mobile {
+    display: none;
+  }
+
+  @media (max-width: 900px) {
+    .mobile {
+      display: flex;
+    }
+    .desktop {
+      display: none;
+    }
+  }
   .content {
     display: flex;
     height: 200px;
@@ -54,7 +66,6 @@ export const Center = styled.div`
 export const Banner = styled.div`
   display: flex;
   padding-bottom: 40px;
-  background: #ff6c00;
   width: 100%;
   background-size: cover;
 
@@ -104,7 +115,7 @@ export const Banner = styled.div`
 
     h2 {
       color: #010927;
-      margin-top: -50px;
+      margin-top: -55px;
       font-size: 30pt;
     }
   }

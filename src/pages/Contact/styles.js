@@ -1,6 +1,18 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  .mobile {
+    display: none;
+  }
+
+  @media (max-width: 900px) {
+    .mobile {
+      display: flex;
+    }
+    .desktop {
+      display: none;
+    }
+  }
   .form {
     margin-bottom: -100px;
     position: relative;
@@ -85,7 +97,7 @@ export const Container = styled.div`
         font-weight: bold;
         color: #012718;
         font-size: 31pt;
-        margin-top: -50px;
+        margin-top: -65px;
       }
     }
   }
@@ -93,6 +105,7 @@ export const Container = styled.div`
 export const Banner = styled.div`
   background-size: cover;
   padding-bottom: 90px;
+  margin-bottom: -100px;
 `;
 export const Center = styled.div`
   margin: 0 auto;

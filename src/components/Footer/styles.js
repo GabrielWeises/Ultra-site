@@ -1,15 +1,25 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background: #ff6c00;
-
+  background: #ff6d00;
+  display: flex;
   margin-top: 100px;
   position: relative;
+  @media (max-width: 900px) {
+    padding: 0 50px;
+    margin-top: 0;
+  }
 
   .footer {
     border-bottom: 2px solid #ddd;
     display: flex;
     color: #fff;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 20px;
+    }
 
     .contact h2 {
       font-family: "Work Sans", sans-serif;
@@ -31,7 +41,7 @@ export const Container = styled.div`
     }
 
     .contact-list i {
-      color: #4deed7;
+      color: #92edd7;
       margin-right: 15px;
     }
   }
@@ -40,6 +50,7 @@ export const Container = styled.div`
   .map {
     flex: 1;
     height: 250px;
+    width: 100%;
   }
 
   .icon {
@@ -47,8 +58,9 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     height: 50px;
-    background: #ff6c00;
+    background: #ff6d00;
     font-weight: bold;
     color: #fff;
     font-size: 25px;
@@ -107,9 +119,18 @@ export const Center = styled.div`
     padding-bottom: 20px;
     color: #fff;
     font-family: "Work Sans", sans-serif;
+    display: flex;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
 
     .second {
       margin-left: 100px;
+
+      @media (max-width: 900px) {
+        margin-left: 0;
+      }
     }
   }
 

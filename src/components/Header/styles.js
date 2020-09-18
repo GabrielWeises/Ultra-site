@@ -3,6 +3,23 @@ import styled from "styled-components";
 export const Container = styled.header`
   height: 60px;
   font-family: "Montserrat", sans-serif;
+
+  .icon a {
+    color: #fff;
+  }
+
+  /* .mobile {
+    display: none;
+  }
+
+  @media (max-width: 900px) {
+    .mobile {
+      display: flex;
+    }
+    .desktop {
+      display: none;
+    }
+  } */
 `;
 export const Center = styled.div`
   max-width: 1000px;
