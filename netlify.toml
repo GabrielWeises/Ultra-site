@@ -1,3 +1,8 @@
 [build]
   command = "CI=false yarn build"
- 
+
+[[redirects]]
+  from = "https://ultrainternet.netlify.app/login"
+  to = "https://ultrainternet.netlify.app/login"
+  status = 200
+  force = true
