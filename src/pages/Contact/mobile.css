@@ -2,24 +2,24 @@
   display: flex;
   flex-direction: column;
 }
-.banner-mobile2 {
+.mobile2 .banner-mobile2 {
   height: 700px;
   background-size: cover;
   padding: 0 30px;
 }
 
-.form {
+.mobile2 .form {
   min-height: 550px;
 }
 
-.header {
+.mobile2 .header {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding-top: 30px;
 }
-.header .title {
+.mobile2 .header .title {
   color: rgba(255, 255, 255, 0.8);
   font-size: 50px;
   text-align: center;
@@ -27,7 +27,7 @@
   font-weight: bold;
   line-height: 50px;
 }
-.header .sub-title {
+.mobile2 .header .sub-title {
   font-family: "Segoe UI", sans-serif;
   color: #012718;
   font-size: 24px;
@@ -37,7 +37,7 @@
   margin-bottom: 20px;
 }
 
-form {
+.mobile2 form {
   display: flex;
   position: relative;
   bottom: -380px;
@@ -52,14 +52,14 @@ form {
   padding: 30px;
 }
 
-.input {
+.mobile2 .input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 70px;
   margin-bottom: 30px;
 }
-.input input {
+.mobile2 .input input {
   padding: 5px 16px;
   color: #666;
   font-family: "Work Sans", sans-serif;
@@ -69,18 +69,18 @@ form {
   height: 40px;
 }
 
-label {
+.mobile2 label {
   font-family: "Work Sans", sans-serif;
   color: #010927 !important;
   font-size: 14px;
   text-transform: uppercase;
 }
 
-input[type="file"] {
+.mobile2 input[type="file"] {
   display: none;
 }
 
-.upload {
+.v .upload {
   display: flex;
   flex-direction: column;
   justify-content: space-between;

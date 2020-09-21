@@ -11,11 +11,11 @@ export const Container = styled.div`
   .desktop {
     margin-bottom: -100px;
   }
-  .mobile {
+  .mobile2 {
     display: none;
   }
   @media (max-width: 900px) {
-    .mobile {
+    .mobile2 {
       display: flex;
     }
     .desktop {
