@@ -38,6 +38,7 @@ export const Container = styled.div`
 
   .form {
     background-size: cover;
+    background-color: #edebec;
 
     .header {
       display: flex;
@@ -234,11 +235,11 @@ export const Box = styled.div`
       font-weight: bold;
       display: block;
       margin-bottom: 5px;
-      font-size: 16px;
+      font-size: 18px;
       font-family: "Segoe UI", sans-serif;
     }
     div {
-      margin-top: 5px;
+      margin-top: -2px;
     }
   }
   .box3 {
@@ -291,11 +292,11 @@ export const Content = styled.div`
   }
   img.man {
     position: absolute;
-    top: -200px;
+    top: -150px;
     left: -100px;
     z-index: 3;
-    width: 500px;
-    height: 549px;
+    width: 600px;
+    height: 449px;
   }
 `;
 

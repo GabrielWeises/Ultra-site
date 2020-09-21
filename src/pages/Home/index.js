@@ -4,7 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import { Container, Slide, Center, Box, Content, Prices } from "./styles";
-import Background from "../../assets/bg.jpg";
+import Background from "../../assets/bg.png";
 import Basic from "../../assets/plano-basic.png";
 import Light from "../../assets/plano-light.png";
 import Premium from "../../assets/plano-premium.png";
@@ -83,7 +83,7 @@ const Home = () => {
             <span className="sub-title-second">Missão, visão e valores</span>
           </div>
           <Content>
-            <img className="man" src={require("../../assets/homem.jpg")} />
+            <img className="man" src={require("../../assets/homem.png")} />
             <div className="container">
               <div className="header">
                 <img src={require("../../assets/target.png")} />
@@ -318,7 +318,7 @@ const Home = () => {
             </div>
             <img
               className="man-mobile"
-              src={require("../../assets/homem.jpg")}
+              src={require("../../assets/homem.png")}
             />
             <div className="item">
               <div className="header-item">

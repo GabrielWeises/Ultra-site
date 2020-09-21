@@ -121,6 +121,7 @@ section .item {
 
 .form-mobile {
   background-size: cover;
+  background-color: #edebec;
   display: flex;
   align-items: center;
   flex-direction: column;

@@ -8,7 +8,7 @@ export const Container = styled.header`
     color: #fff;
   }
 
-  /* .mobile {
+  .mobile {
     display: none;
   }
 
@@ -19,7 +19,7 @@ export const Container = styled.header`
     .desktop {
       display: none;
     }
-  } */
+  }
 `;
 export const Center = styled.div`
   max-width: 1000px;
