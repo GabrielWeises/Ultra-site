@@ -1,11 +1,11 @@
 .mobile {
   display: flex;
   flex-direction: column;
+  z-index: -1;
 }
 .slide {
   background: red;
   position: relative;
-  z-index: -1;
 }
 .slide .button {
   position: absolute;

@@ -7,7 +7,20 @@ export const Container = styled.div`
     display: flex;
     background-size: cover;
     justify-content: flex-end;
+  }
+  .desktop {
     margin-bottom: -100px;
+  }
+  .mobile {
+    display: none;
+  }
+  @media (max-width: 900px) {
+    .mobile {
+      display: flex;
+    }
+    .desktop {
+      display: none;
+    }
   }
 `;
 

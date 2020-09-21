@@ -189,6 +189,7 @@ export const Slide = styled.div`
   background: #ff6d00;
   width: 100%;
   position: relative;
+  z-index: -1;
 
   button {
     position: absolute;

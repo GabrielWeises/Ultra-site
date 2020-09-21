@@ -8,13 +8,34 @@ import "./mobile.css";
 const Header = ({ ref1 }) => {
   const [toggle, setToggle] = useState("");
   const [menu, setMenu] = useState("");
+  document.addEventListener("click", closeSubmenu, false);
   const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    setItems(document.querySelectorAll(".item"));
+  }, []);
 
   useEffect(() => {
     setMenu(document.querySelector(".menu"));
     setToggle(document.querySelector(".toggle"));
-    setItems(document.querySelectorAll(".item"));
-  }, []);
+
+    for (let item of items) {
+      if (item.querySelector(".submenu")) {
+        item.addEventListener("click", toggleItem, false);
+        item.addEventListener("keypress", toggleItem, false);
+      }
+    }
+  }, [items]);
+
+  function closeSubmenu(e) {
+    let isClickInside = document.querySelector(".menu").contains(e.target);
+
+    if (!isClickInside && document.querySelector(".submenu-active")) {
+      document
+        .querySelector(".submenu-active")
+        .classList.remove("submenu-active");
+    }
+  }
 
   function SmoothScroll2() {
     const section2 = document.querySelector("#section2");
@@ -49,70 +70,57 @@ const Header = ({ ref1 }) => {
     }
   };
 
+  function toggleItem() {
+    if (this.classList.contains("submenu-active")) {
+      this.classList.remove("submenu-active");
+    } else if (menu.querySelector(".submenu-active")) {
+      menu.querySelector(".submenu-active").classList.remove("submenu-active");
+      this.classList.add("submenu-active");
+    } else {
+      this.classList.add("submenu-active");
+    }
+  }
+
   return (
     <Container>
-      <div className="desktop">
-        <Center>
-          <LogoBox>
-            <Link to="/">
-              <Logo src={LogoImage} />
-            </Link>
-          </LogoBox>
-          <ul>
-            <Link to="/">
-              <MenuItem className="item">home</MenuItem>
-            </Link>
-            <a onClick={SmoothScroll1}>
-              <MenuItem className="item">somos ultra</MenuItem>
+      <nav>
+        <ul class="menu">
+          <li class="logo">
+            <img src={LogoImage} alt="Logo" />
+          </li>
+          <li class="item">
+            <Link to="/">Home</Link>
+          </li>
+          <li class="item">
+            <a href="#">somos ultra</a>
+          </li>
+          <li class="item">
+            <a href="#">planos ultra</a>
+          </li>
+          <li class="item">
+            <Link to="/subscriber">área do assinante</Link>
+          </li>
+          <li class="item has-submenu">
+            <a tabindex="0">
+              contato <i class="fas fa-chevron-down"></i>
             </a>
-            <a onClick={SmoothScroll2}>
-              <MenuItem className="item">planos ultra</MenuItem>
+            <ul class="submenu">
+              <li class="subitem">
+                <Link to="/contact">colaborador</Link>
+              </li>
+              <li class="subitem">
+                <Link to="/ombudsman">ouvidoria</Link>
+              </li>
+            </ul>
+          </li>
+
+          <li class="toggle">
+            <a onClick={toggleMenu} href="#">
+              <i class="fas fa-bars"></i>
             </a>
-            <Link to="/subscriber">
-              <MenuItem className="item">área do assinante</MenuItem>
-            </Link>
-            <Link to="/contact">
-              <MenuItem className="item">Ouvidoria</MenuItem>
-            </Link>
-          </ul>
-        </Center>
-      </div>
-      <div className="mobile">
-        <div className="menu-mobile">
-          <LogoBox>
-            <Link to="/">
-              <Logo src={LogoImage} />
-            </Link>
-          </LogoBox>
-          <div className="icon-box">
-            <span>Menu</span>
-            <div onClick={toggleMenu} className="icon toggle">
-              <a href="#">
-                <i class="fas fa-bars"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <nav>
-          <ul className="menu">
-            <Link to="/">
-              <MenuItem className="item">home</MenuItem>
-            </Link>
-            <a onClick={SmoothScroll1}>
-              <MenuItem className="item">somos ultra</MenuItem>
-            </a>
-            <a onClick={SmoothScroll2}>
-              <MenuItem className="item">planos ultra</MenuItem>
-            </a>
-            <Link to="/subscriber">
-              <MenuItem className="item">área do assinante</MenuItem>
-            </Link>
-            <Link to="/contact">
-              <MenuItem className="item">Ouvidoria</MenuItem>
-            </Link>
-          </ul>
-        </nav>
-      </div>
+          </li>
+        </ul>
+      </nav>
     </Container>
   );
 };
