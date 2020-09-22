@@ -25,33 +25,36 @@ const Ombudsman = () => {
                   <div>
                     <p className="title">Whatsapp</p>
                     <p className="title">Suporte</p>
-                    <span className="cel">(34) 1234 5678</span>
+                    <span className="cel">(34) 3616-1900</span>
                   </div>
                   <i class="fas fa-tools"></i>
                 </div>
               </a>
-              <a>
-                <div className="button margin-left">
+              <a className="margin-left">
+                <div className="button ">
                   <i class="fab fa-whatsapp"></i>
                   <div>
                     <p className="title">Whatsapp</p>
                     <p className="title">Comercial</p>
-                    <span className="cel">(34) 1234 5678</span>
+                    <span className="cel">(34) 3616-1900</span>
                   </div>
                   <i class="fas fa-shopping-cart"></i>
                 </div>
               </a>
             </div>
-            <a>
-              <div className="button margin-top">
-                <i class="far fa-envelope"></i>
-                <div>
-                  <p className="title">Criticas e</p>
-                  <p className="title">Sugestões</p>
-                  <span className="cel">email@mail.com</span>
+            <div className="box2">
+              <a className="margin-top">
+                <div className="button ">
+                  <i class="far fa-envelope"></i>
+                  <div>
+                    <p className="title">Criticas e Sugestões</p>
+
+                    <span className="cel">contato@ultrainternet.com.br</span>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
+
             <div className="media-group">
               <a>
                 <div className="button-case">
@@ -61,8 +64,8 @@ const Ombudsman = () => {
                   <span>facebook</span>
                 </div>
               </a>
-              <a>
-                <div className="button-case margin-left">
+              <a className="margin-left">
+                <div className="button-case ">
                   <div className="media-button">
                     <i class="fab fa-instagram"></i>
                   </div>
@@ -88,7 +91,7 @@ const Ombudsman = () => {
               <div>
                 <p className="title">Whatsapp</p>
                 <p className="title">Suporte</p>
-                <span className="cel">(34) 1234 5678</span>
+                <span className="cel">(34) 3616-1900</span>
               </div>
               <i class="fas fa-tools"></i>
             </div>
@@ -99,7 +102,7 @@ const Ombudsman = () => {
               <div>
                 <p className="title">Whatsapp</p>
                 <p className="title">Comercial</p>
-                <span className="cel">(34) 1234 5678</span>
+                <span className="cel">(34) 3616-1900</span>
               </div>
               <i class="fas fa-shopping-cart"></i>
             </div>
@@ -108,9 +111,8 @@ const Ombudsman = () => {
             <div className="button-mobile">
               <i class="far fa-envelope"></i>
               <div>
-                <p className="title">Criticas e</p>
-                <p className="title">Sugestões</p>
-                <span className="cel">email@mail.com</span>
+                <p className="title">Criticas e Sugestões</p>
+                <span className="cel">contato@ultrainternet.com.br</span>
               </div>
             </div>
           </a>

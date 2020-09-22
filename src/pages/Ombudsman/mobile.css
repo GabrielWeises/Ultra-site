@@ -24,7 +24,7 @@
 .button-mobile {
   display: flex;
   border: 2px solid #4deed7;
-  width: 240px;
+  min-width: 240px;
   align-items: center;
   padding: 10px 20px;
   border-radius: 15px;

@@ -11,6 +11,10 @@
   position: absolute;
   left: 50%;
   bottom: 15px;
+  width: 200px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   transform: translateX(-50%);
 
   background: transparent;
@@ -23,6 +27,7 @@
 .button .title {
   font-weight: bold;
   font-size: 16px;
+  margin-bottom: 8px;
 }
 .button .sub-title {
   font-size: 9px;
@@ -117,6 +122,8 @@ section .item {
   padding-bottom: 20px;
   border-bottom: 2px solid #ff6900;
   margin-bottom: 20px;
+  display: flex !important;
+  flex-direction: column;
 }
 
 .form-mobile {
@@ -276,4 +283,12 @@ section .item {
   color: #fff;
   height: 40px;
   border-radius: 10px;
+}
+
+.banner-button {
+  width: 200px;
+}
+
+.group-item {
+  height: 500px;
 }

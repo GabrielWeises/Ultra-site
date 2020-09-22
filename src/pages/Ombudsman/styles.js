@@ -5,6 +5,11 @@ export const Container = styled.div`
     display: none;
   }
 
+  .box2 {
+    display: flex;
+    justify-content: flex-start;
+  }
+
   @media (max-width: 900px) {
     .mobile {
       display: flex;
@@ -179,7 +184,7 @@ export const Center = styled.div`
   .button {
     display: flex;
     border: 2px solid #4deed7;
-    width: 240px;
+    min-width: 240px;
     align-items: center;
     padding: 10px 20px;
     border-radius: 15px;

@@ -43,7 +43,7 @@ const Ombudsman = () => {
                   <label htmlFor="name">
                     NÚMERO DE TELEFONE<span className="ast">*</span>
                   </label>
-                  <input placeholder="+55 34 9 9999 9999" type="text" />
+                  <input placeholder="(34) 9 9999 9999" type="text" />
                 </div>
                 <div className="input upload">
                   <label htmlFor="name">
@@ -96,7 +96,7 @@ const Ombudsman = () => {
               <label htmlFor="number">
                 NÚMERO DE TELEFONE<span className="ast">*</span>
               </label>
-              <input id="number" placeholder="+55 34 9 9999 9999" type="text" />
+              <input id="number" placeholder="(34) 9 9999 9999" type="text" />
             </div>
             <div className="input upload">
               <label htmlFor="name">

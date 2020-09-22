@@ -7,6 +7,7 @@ export const Container = styled.div`
     display: flex;
     background-size: cover;
     justify-content: flex-end;
+    z-index: -1;
   }
   .desktop {
     margin-bottom: -100px;

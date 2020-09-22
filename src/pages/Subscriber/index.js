@@ -64,7 +64,7 @@ const Subscriber = () => {
                 <img src={require("../../assets/zap.png")} alt="" />
                 <div>
                   <span className="title">Whatsapp</span>
-                  <span className="cel">(34) 1234 5678</span>
+                  <span className="cel">(34) 3616-1900</span>
                 </div>
               </div>
             </a>
@@ -129,7 +129,7 @@ const Subscriber = () => {
               <i class="fab fa-whatsapp"></i>
               <div>
                 <span className="title">Whatsapp</span>
-                <span className="cel">(34) 1234 5678</span>
+                <span className="cel">(34) 3616-1900</span>
               </div>
             </div>
           </a>

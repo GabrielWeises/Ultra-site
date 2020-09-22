@@ -61,8 +61,8 @@ const Home = () => {
               <div>
                 <span className="title">Satisfação</span>
                 <span>
-                  Pra estar com um a Ultra, um cliente precisa estar satisfeito
-                  de todas as formas possíveis, independentemente da empresa que
+                  Pra estar com a Ultra, um cliente precisa estar satisfeito de
+                  todas as formas possíveis, independentemente da empresa que
                   você utiliza hoje, não aceite menos que isso
                 </span>
               </div>
@@ -141,7 +141,7 @@ const Home = () => {
 
               <div style={{ flex: 1 }} className="input">
                 <label htmlFor="name">NÚMERO DE TELEFONE</label>
-                <input placeholder="+55 34 9 9999 9999" type="text" />
+                <input placeholder="(34) 9 9999 9999" type="text" />
               </div>
             </div>
 
@@ -267,7 +267,6 @@ const Home = () => {
           </Carousel>
           <button className="button">
             <span className="title">CLIQUE AQUI</span>
-            <br />
             <span className="sub-title">FAÇA SEU PRÉ-CADASTRO DE CLIENTE</span>
           </button>
         </div>
@@ -294,8 +293,8 @@ const Home = () => {
               <div className="aside-info">
                 <p className="title">Satisfação</p>
                 <p>
-                  Pra estar com um a Ultra, um cliente precisa estar satisfeito
-                  de todas as formas possíveis, independentemente da empresa que
+                  Pra estar com a Ultra, um cliente precisa estar satisfeito de
+                  todas as formas possíveis, independentemente da empresa que
                   você utiliza hoje, não aceite menos que isso
                 </p>
               </div>
@@ -373,8 +372,10 @@ const Home = () => {
           </div>
 
           <div className="input">
-            <label htmlFor="number">número de telefone</label>
-            <input id="number" placeholder="+55 44 9 9999 9999" type="text" />
+            <label htmlFor="number">
+              número de telefone<span className="ast"> *</span>
+            </label>
+            <input id="number" placeholder="(34) 9 9999 9999" type="text" />
           </div>
 
           <div className="submit">
