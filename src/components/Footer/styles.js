@@ -5,6 +5,26 @@ export const Container = styled.div`
   display: flex;
   margin-top: 100px;
   position: relative;
+
+  .wpp-button {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background: #25d366;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: Center;
+    border-radius: 25px;
+    border: 1px solid #fff;
+
+    i {
+      color: #fff;
+      font-size: 30px;
+    }
+  }
+
   @media (max-width: 900px) {
     padding: 0 50px;
     margin-top: 0;

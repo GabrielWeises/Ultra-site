@@ -162,7 +162,7 @@ const Home = () => {
                 sua casa ou empresa.
               </p>
               <p>
-                Internet de qualidade superior a 100% fibra óptica, assim é a
+                Internet de qualidade superior. 100% fibra óptica, assim é a
                 Ultra.
               </p>
               <p>Ultra rapidez que só a fibra óptica pode te dar</p>
@@ -390,7 +390,7 @@ const Home = () => {
           <div className="text">
             <p>
               Dúvidas aqui, só se for sobre qual o melhor plano para atender sua
-              casa ou empresa. Internet de qualidade superior a 100% fibra
+              casa ou empresa. Internet de qualidade superior. 100% fibra
               óptica, assim é a Ultra.
             </p>
             <p>

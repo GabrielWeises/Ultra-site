@@ -12,6 +12,11 @@ const Footer = () => {
   }
   return (
     <Container>
+      <div className="wpp-button">
+        <a className="wpp-link">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
       <div onClick={SmoothScroll} className="icon">
         ^
       </div>
