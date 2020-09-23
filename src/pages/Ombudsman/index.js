@@ -25,7 +25,7 @@ const Ombudsman = () => {
                   <div>
                     <p className="title">Whatsapp</p>
                     <p className="title">Suporte</p>
-                    <span className="cel">(34) 3616-1900</span>
+                    <span className="cel">(34) 98408-0151</span>
                   </div>
                   <i class="fas fa-tools"></i>
                 </div>
@@ -36,7 +36,7 @@ const Ombudsman = () => {
                   <div>
                     <p className="title">Whatsapp</p>
                     <p className="title">Comercial</p>
-                    <span className="cel">(34) 3616-1900</span>
+                    <span className="cel">(34) 98408-0151</span>
                   </div>
                   <i class="fas fa-shopping-cart"></i>
                 </div>
@@ -91,7 +91,7 @@ const Ombudsman = () => {
               <div>
                 <p className="title">Whatsapp</p>
                 <p className="title">Suporte</p>
-                <span className="cel">(34) 3616-1900</span>
+                <span className="cel">(34) 98408-0151</span>
               </div>
               <i class="fas fa-tools"></i>
             </div>
@@ -102,7 +102,7 @@ const Ombudsman = () => {
               <div>
                 <p className="title">Whatsapp</p>
                 <p className="title">Comercial</p>
-                <span className="cel">(34) 3616-1900</span>
+                <span className="cel">(34) 98408-0151</span>
               </div>
               <i class="fas fa-shopping-cart"></i>
             </div>

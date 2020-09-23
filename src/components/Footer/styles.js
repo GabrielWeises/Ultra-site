@@ -8,8 +8,8 @@ export const Container = styled.div`
 
   .wpp-button {
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 10px;
+    right: 10px;
     background: #25d366;
     height: 50px;
     width: 50px;

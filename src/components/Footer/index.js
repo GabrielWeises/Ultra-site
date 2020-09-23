@@ -10,10 +10,15 @@ const Footer = () => {
     home.scrollIntoView({ behavior: "smooth" });
     homeMobile.scrollIntoView({ behavior: "smooth" });
   }
+
   return (
     <Container>
       <div className="wpp-button">
-        <a className="wpp-link">
+        <a
+          href="https://wa.me/5534984080151"
+          target="_blank"
+          className="wpp-link"
+        >
           <i class="fab fa-whatsapp"></i>
         </a>
       </div>
