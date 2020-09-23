@@ -19,7 +19,7 @@ const Ombudsman = () => {
               <p className="sub-title">Ouvidoria:</p>
             </div>
             <div className="box-1">
-              <a>
+              <a href="https://wa.me/5534984080151" target="_blank">
                 <div className="button">
                   <i class="fab fa-whatsapp"></i>
                   <div>
@@ -30,7 +30,11 @@ const Ombudsman = () => {
                   <i class="fas fa-tools"></i>
                 </div>
               </a>
-              <a className="margin-left">
+              <a
+                href="https://wa.me/5534984080151"
+                target="_blank"
+                className="margin-left"
+              >
                 <div className="button ">
                   <i class="fab fa-whatsapp"></i>
                   <div>
@@ -43,7 +47,10 @@ const Ombudsman = () => {
               </a>
             </div>
             <div className="box2">
-              <a className="margin-top">
+              <a
+                href="mailto:contato@ultrainternet.com.br"
+                className="margin-top"
+              >
                 <div className="button ">
                   <i class="far fa-envelope"></i>
                   <div>
@@ -56,7 +63,10 @@ const Ombudsman = () => {
             </div>
 
             <div className="media-group">
-              <a>
+              <a
+                href="https://www.facebook.com/ultrainternetoficial"
+                target="_blank"
+              >
                 <div className="button-case">
                   <div className="media-button">
                     <i class="fab fa-facebook-f"></i>
@@ -64,7 +74,11 @@ const Ombudsman = () => {
                   <span>facebook</span>
                 </div>
               </a>
-              <a className="margin-left">
+              <a
+                href="https://www.instagram.com/ultrainternetoficial/"
+                target="_blank"
+                className="margin-left"
+              >
                 <div className="button-case ">
                   <div className="media-button">
                     <i class="fab fa-instagram"></i>
@@ -85,7 +99,7 @@ const Ombudsman = () => {
             <p className="title">Ouvidoria</p>
             <p className="sub-title">Ouvidoria:</p>
           </div>
-          <a>
+          <a href="https://wa.me/5534984080151" target="_blank">
             <div className="button-mobile">
               <i class="fab fa-whatsapp"></i>
               <div>
@@ -96,7 +110,7 @@ const Ombudsman = () => {
               <i class="fas fa-tools"></i>
             </div>
           </a>
-          <a>
+          <a href="https://wa.me/5534984080151" target="_blank">
             <div className="button-mobile">
               <i class="fab fa-whatsapp"></i>
               <div>
@@ -107,7 +121,7 @@ const Ombudsman = () => {
               <i class="fas fa-shopping-cart"></i>
             </div>
           </a>
-          <a>
+          <a href="mailto:contato@ultrainternet.com.br">
             <div className="button-mobile">
               <i class="far fa-envelope"></i>
               <div>
@@ -117,7 +131,10 @@ const Ombudsman = () => {
             </div>
           </a>
           <div className="media-group-mobile">
-            <a>
+            <a
+              href="https://www.facebook.com/ultrainternetoficial"
+              target="_blank"
+            >
               <div className="button-mobile-case">
                 <div className="media-button">
                   <i class="fab fa-facebook-f"></i>
@@ -125,7 +142,10 @@ const Ombudsman = () => {
                 <span>facebook</span>
               </div>
             </a>
-            <a>
+            <a
+              href="https://www.instagram.com/ultrainternetoficial/"
+              target="_blank"
+            >
               <div className="button-mobile-case">
                 <div className="media-button">
                   <i class="fab fa-instagram"></i>
